@@ -1,110 +1,120 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <meta charset="utf-8">
-  	<title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/mystyle.css">
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="home">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="home">
+    <div class="container">
+      <div id="my-name">
+        <h1>Murilo Miranda Nüßlein</h1>
+      </div>
       <nav>
-        <a href="#home" id="my-name">Murilo Miranda Nüßlein</a>
-        <a href="#contact">Contact</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
 
-    <!-- About -->
-    <div id="about" class="grid-container">
-      <a name="about"></a>
-      <div class="item1">
-        <div class="left">
-          <p>During my academic training, I worked with different biological databases used statistical techniques to verify how environmental variations influenced species diversity and abundance. I also managed my own research and participated in-group project meetings. As a result, I developed and maintained successful working relationships. </p>
-        </div>
-        <div class="left">
-          Skills:
-          <br>
-          <ul>
-            <li><span>Software:</span> Windows, R, C, Linux, ESRI ArcGIS, MS Office, LATEX, Markdown, Python.</li>
-            <li><span>Statistics:</span> Generalized linear models, mixed effects models, multivariate statistics, data visualization, model selection, likelihood optimization, bootstrap.</li>
-            <li><span>Web pages:</span> HTML5, CSS, JavaScript, Bootstrap, jQuery.</li>
-            <li><span>Languages:</span> Portuguese (native), English (C1), Spanish (A2), German (A2).</li>
-          </ul>
-        </div>
+  <!-- About -->
+  <div id="about" class="grid-container">
+    <a name="about"></a>
+    <div class="item1">
+      <div class="left">
+        <p>During my academic training, I worked with different biological databases used statistical techniques to verify how environmental variations influenced species diversity and abundance. I also managed my own research and participated in-group project
+          meetings. As a result, I developed and maintained successful working relationships. </p>
       </div>
-      <div class="item2">
-        <img id="my_pic" src = "https://user-images.githubusercontent.com/2809318/33570773-2ce8d812-d92e-11e7-9b9e-480cbecb45bd.JPG">
+      <div class="left">
+        Skills:
+        <br>
+        <ul>
+          <li><span>Software:</span> Windows, R, C, Linux, ESRI ArcGIS, MS Office, LATEX, Markdown, Python.</li>
+          <li><span>Statistics:</span> Generalized linear models, mixed effects models, multivariate statistics, data visualization, model selection, likelihood optimization, bootstrap.</li>
+          <li><span>Web pages:</span> HTML5, CSS, JavaScript, Bootstrap, jQuery.</li>
+          <li><span>Languages:</span> Portuguese (native), English (C1), Spanish (A2), German (A2).</li>
+        </ul>
       </div>
     </div>
+    <div class="item2">
+      <img id="my_pic" src="https://user-images.githubusercontent.com/2809318/33570773-2ce8d812-d92e-11e7-9b9e-480cbecb45bd.JPG">
+    </div>
+  </div>
 
-    <section id="portfolio">
-      <a name="portfolio"></a>
-      <h2>Portfolio</h2>
-    </section>
+  <section id="portfolio">
+    <a name="portfolio"></a>
+    <h2>Portfolio</h2>
+  </section>
 
-    <div id="contact" class="grid-container">
-      <a name="contact"></a>
-      <div class="item3">
-        <p>Contact me</p>
-        <form action="/send-a-message">
-          <div class="form-group">
-            <label for="input-name">Name *</label>
-            <input id="input-name" type="text" class="form-control" name="name" placeholder="Please enter your Name" data-error="Name is required." required>
-          </div>
-          <div class="form-group">
-            <label for="input-email">Email *</label>
-            <input id="input-email" type="email" class="form-control" name="e-mail" placeholder="Please enter your Email" data-error="Valid email is required." required>
-          </div>
+  <div id="contact" class="grid-container">
+    <a name="contact"></a>
+    <div class="item3">
+      <p>Contact me</p>
+      <form action="/send-a-message">
+        <div class="form-group">
+          <label for="input-name">Name *</label>
+          <input id="input-name" type="text" class="form-control" name="name" placeholder="Please enter your Name" data-error="Name is required." required>
+        </div>
+        <div class="form-group">
+          <label for="input-email">Email *</label>
+          <input id="input-email" type="email" class="form-control" name="e-mail" placeholder="Please enter your Email" data-error="Valid email is required." required>
+        </div>
       </form>
-      </div>
-      <div class="item4">
-        <form>
-          <div class="form-group">
-            <label for="input-msg">Message *</label>
-            <textarea id="input-msg" type="text" class="form-control" name="msg" placeholder="Message for me" rows="3" data-error="Please, leave me a message." required></textarea>
+    </div>
+    <div class="item4">
+      <form>
+        <div class="form-group">
+          <label for="input-msg">Message *</label>
+          <textarea id="input-msg" type="text" class="form-control" name="msg" placeholder="Message for me" rows="3" data-error="Please, leave me a message." required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn" id="btn-submit" value="Submit">
+        </div>
+        <p style="font-size:100%"><strong>*</strong> These fields are required.</p>
+      </form>
+    </div>
+    <div class="item5">
+      <p>Also you can find me:</p>
+      <div id="social-media">
+        <div class="subitem1">
+          <div class="sub1subitem1">
+            <a href="https://www.facebook.com/murilodantas48" target="_blank"><i class="fa fa-facebook fa-2x pull-right"></i></a>
           </div>
-          <div class="form-group">
-            <input type="submit" class="btn" id="btn-submit" value="Submit">
+          <div class="sub1subitem2">
+            <a href="https://github.com/murilomiranda" target="_blank"><i class="fa fa-github fa-2x pull-left"></i></a>
           </div>
-          <p style="font-size:100%"><strong>*</strong> These fields are required.</p>
-        </form>
-      </div>
-      <div class="item5">
-        <p>Also you can find me:</p>
-        <div id="social-media">
-          <div class="subitem1">
-            <div class="sub1subitem1">
-              <a href="https://www.facebook.com/murilodantas48" target="_blank"><i class="fa fa-facebook fa-2x pull-right"></i></a>
-            </div>
-            <div class="sub1subitem2">
-              <a href="https://github.com/murilomiranda" target="_blank"><i class="fa fa-github fa-2x pull-left"></i></a>
-            </div>
+        </div>
+        <br>
+        <div class="subitem2">
+          <div class="sub2subitem1">
+            <a href="https://www.linkedin.com/in/murilo-miranda-027b8334/" target="_blank"><i class="fa fa-linkedin fa-2x pull-right"></i></a>
           </div>
-          <br>
-          <div class="subitem2">
-            <div class="sub2subitem1">
-              <a href="https://www.linkedin.com/in/murilo-miranda-027b8334/" target="_blank"><i class="fa fa-linkedin fa-2x pull-right"></i></a>
-            </div>
-            <div class="sub2subitem2">
-              <a href="https://www.freecodecamp.org/murilomiranda" target="_blank"><i class="fa fa-free-code-camp fa-2x pull-left"></i></a>
-            </div>
+          <div class="sub2subitem2">
+            <a href="https://www.freecodecamp.org/murilomiranda" target="_blank"><i class="fa fa-free-code-camp fa-2x pull-left"></i></a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="grid-container">
-      <div class="item1">
-        &copy; Murilo Miranda Nüßlein
-      </div>
-      <div class="item2">
-        <a href="#home">Back to Top</a>
-      </div>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer class="grid-container">
+    <div class="item1">
+      &copy; Murilo Miranda Nüßlein
+    </div>
+    <div class="item2">
+      <a href="#home">Back to Top</a>
+    </div>
+  </footer>
+</body>
+
 </html>

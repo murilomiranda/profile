@@ -13,10 +13,12 @@
   margin-top: 0px;
 }
 
-#my-name{
+header #my-name{
   float: left;
-  font-size: 120%;
-  font-weight:700;
+}
+
+header #my-name h1{
+  margin: 0;
 }
 
 .grid-container{
