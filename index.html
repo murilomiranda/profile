@@ -17,9 +17,9 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -27,53 +27,68 @@
 
 
   <!-- About -->
-  <div id="about" class="grid-container">
+  <section id="about">
     <a name="about"></a>
-    <div class="item1">
-      <div class="left">
-        <p>During my academic training, I worked with different biological databases used statistical techniques to verify how environmental variations influenced species diversity and abundance. I also managed my own research and participated in-group project
-          meetings. As a result, I developed and maintained successful working relationships. </p>
+    <div class="grid-container">
+      <div class="item1">
+        <div class="left">
+          <p>During my academic training, I worked with different biological databases used statistical techniques to verify how environmental variations influenced species diversity and abundance. I also managed my own research and participated in-group
+            project meetings. As a result, I developed and maintained successful working relationships. </p>
+        </div>
+        <div class="left">
+          <p>Skills:</p>
+          <ul>
+            <li><span>Software:</span> Windows, R, C, Linux, ESRI ArcGIS, MS Office, LATEX, Markdown, Python.</li>
+            <li><span>Statistics:</span> Generalized linear models, mixed effects models, multivariate statistics, data visualization, model selection, likelihood optimization, bootstrap.</li>
+            <li><span>Web pages:</span> HTML5, CSS, JavaScript, Bootstrap, jQuery.</li>
+            <li><span>Languages:</span> Portuguese (native), English (C1), Spanish (A2), German (A2).</li>
+          </ul>
+        </div>
       </div>
-      <div class="left">
-        Skills:
-        <br>
-        <ul>
-          <li><span>Software:</span> Windows, R, C, Linux, ESRI ArcGIS, MS Office, LATEX, Markdown, Python.</li>
-          <li><span>Statistics:</span> Generalized linear models, mixed effects models, multivariate statistics, data visualization, model selection, likelihood optimization, bootstrap.</li>
-          <li><span>Web pages:</span> HTML5, CSS, JavaScript, Bootstrap, jQuery.</li>
-          <li><span>Languages:</span> Portuguese (native), English (C1), Spanish (A2), German (A2).</li>
-        </ul>
+      <div class="item2">
+        <img id="my_pic" src="https://user-images.githubusercontent.com/2809318/33570773-2ce8d812-d92e-11e7-9b9e-480cbecb45bd.JPG">
       </div>
     </div>
-    <div class="item2">
-      <img id="my_pic" src="https://user-images.githubusercontent.com/2809318/33570773-2ce8d812-d92e-11e7-9b9e-480cbecb45bd.JPG">
-    </div>
-  </div>
+  </section>
 
   <section id="portfolio">
     <a name="portfolio"></a>
     <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="item">
+        <a href="https://codepen.io/murilomiranda/full/zPBZLr" target="_blank">
+        <img src="https://user-images.githubusercontent.com/2809318/33579052-bcdec412-d948-11e7-8359-b850b6532c2e.png" alt="Project: animal card">
+        <h4>Animal card</h4>
+      </a>
+      </div>
+      <div class="item">
+        <a href="https://codepen.io/murilomiranda/pen/rYaBmg" target="_blank">
+        <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33579093-e16cdbac-d948-11e7-968d-42a85f6a529e.png" alt="Project: Build a Tribute Page">
+        <h4>Tribute Page</h4>
+        </a>
+      </div>
+    </div>
   </section>
 
-  <div id="contact" class="grid-container">
+  <section id="contact">
     <a name="contact"></a>
-    <div class="item3">
+    <div class="box">
       <p>Contact me</p>
       <form action="/send-a-message">
         <div class="form-group">
-          <label for="input-name">Name *</label>
+          <label for="input-name">Name*</label><br>
           <input id="input-name" type="text" class="form-control" name="name" placeholder="Please enter your Name" data-error="Name is required." required>
         </div>
         <div class="form-group">
-          <label for="input-email">Email *</label>
+          <label for="input-email">Email*</label><br>
           <input id="input-email" type="email" class="form-control" name="e-mail" placeholder="Please enter your Email" data-error="Valid email is required." required>
         </div>
       </form>
     </div>
-    <div class="item4">
+    <div class="box">
       <form>
         <div class="form-group">
-          <label for="input-msg">Message *</label>
+          <label for="input-msg">Message*</label><br>
           <textarea id="input-msg" type="text" class="form-control" name="msg" placeholder="Message for me" rows="3" data-error="Please, leave me a message." required></textarea>
         </div>
         <div class="form-group">
@@ -82,7 +97,7 @@
         <p style="font-size:100%"><strong>*</strong> These fields are required.</p>
       </form>
     </div>
-    <div class="item5">
+    <div class="box">
       <p>Also you can find me:</p>
       <div id="social-media">
         <div class="subitem1">
@@ -104,15 +119,17 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="grid-container">
-    <div class="item1">
-      &copy; Murilo Miranda Nüßlein
-    </div>
-    <div class="item2">
-      <a href="#home">Back to Top</a>
+  <footer>
+    <div class="grid-container">
+      <div class="item1">
+        &copy; Murilo Miranda Nüßlein 2018
+      </div>
+      <div class="item2">
+        <a href="#home">Back to Top</a>
+      </div>
     </div>
   </footer>
 </body>
