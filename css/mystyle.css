@@ -1,0 +1,102 @@
+#my_pic{
+  width: 90%;
+  height: auto;
+  border-color: #2B8DAD;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 40%;
+  margin-top: 50px;
+}
+
+#about{
+  background: url(https://user-images.githubusercontent.com/2809318/33624210-e14d1604-d9f3-11e7-93d6-8425ad93aa94.jpg);
+  margin-top: 0px;
+}
+
+#my-name{
+  float: left;
+  font-size: 120%;
+  font-weight:700;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: #FFF;
+}
+
+.item2{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.left {
+    border: 1px solid #FFF;
+    background-color: #2B8DAD;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 2%;
+}
+
+/* Style the top navigation bar */
+nav {
+    overflow: hidden;
+    background-color: #FFF;
+    height: 70px;
+}
+
+/* Style the topnav links */
+nav a {
+    float: right;
+    display: block;
+    color: #57D1FA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #FAAA57;
+    color: black;
+}
+
+p{
+    font-size: 120%;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+ul{
+    list-style-type: none;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+}
+
+span{
+  font-weight: bold;
+}
+
+h2{
+  text-align: center;
+  color: #2B8DAD;
+  font-size:300%;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #FAAA57;
+    color: white;
+    height: 20px;
+}
